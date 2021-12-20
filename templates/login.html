@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login-School Management</title>
+         <link rel = "icon" href = "/static/logo.png" type = "image/x-icon">
+        <style>
+            body {
+                background-color: #0a0b18;
+            }
+            .container {
+                background-color: whitesmoke;
+                height: 300px;
+                width: 250px;
+                position: absolute;
+                top: 100px;
+                left: 500px;
+            }
+            .items {
+                height: 30px;
+                width: 250px;
+                border-radius: 20px;
+                margin-top: 15px;
+                margin-left: 40px;
+                padding-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <form action= "{{ url_for('confirm') }}" method="post">
+            <input type="name" placeholder="Username" class="items" name="username"><br>
+            <input type="password" placeholder="Password (4 characters minimum)" class="items" name="password" title="Pass."><br>
+            <input type="number" placeholder="Admission No." class="items" name="number"><br>   
+            <input type="number" placeholder="School Code" class="items" name="code"><br><br>
+            <input type="submit" style="background-color: green; height: 40px; width: 290px; margin-left: 40px; border-radius: 20px; border:green">
+        </div>
+        </form>
+    </body>
+</html>

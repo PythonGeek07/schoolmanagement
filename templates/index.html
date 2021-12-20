@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <head>
+        <title>Homepage-School Management</title>
+            <link rel = "icon" href = "/static/logo.png" type = "image/x-icon">
+        <style>
+            body {
+                background-color: #0a0b18;
+                margin: 0%;
+                padding: 0%;
+            }
+            .name {
+                background-color: #23232e;
+                height: 50px;
+                width: 160px;
+                margin-left: 0px;
+                position: absolute;
+                top: 0%;
+            }
+            .head {
+                background-color: #2c2c34;
+                height:50px;
+                width: 89.6%;
+                position: absolute;
+                left: 160px;
+            }
+            .sidebar {
+                background-color: #2c2d35;
+                height: 150%;
+                width: 160px;
+                position: absolute;
+                top: 50px;
+                left: 0%;
+            }
+            .bluebox {
+                background-color: #362d9c;
+                height: 200px;
+                width: 240px;
+                position: absolute;
+                top: 375px;
+                left: 187px;
+
+            }
+            .lightbluebox {
+                background-color: 	#BF40BF;
+                height: 200px;
+                width: 240px;
+                position: absolute;
+                top: 375px;
+                left: 457px;
+            
+            }
+            .dunebox {
+                background-color: #de9c28;
+                height: 200px;
+                width: 240px;
+                position: absolute;
+                top: 375px;
+                left: 727px;
+            }
+            .redbox {
+                background-color: #c65956;
+                height: 200px;
+                width: 240px;
+                position: absolute;
+                top: 375px;
+                left: 999px;
+
+            }
+            .greenbox {
+                background-color: #3CB371;
+                height: 200px;
+                width: 240px;
+                position: absolute;
+                top: 375px;
+                left: 1274px;
+            
+            }
+            .midbox {
+                background-color: #FAEBD7;
+                height: 545px;
+                width: 1330px;
+                position: absolute;
+                top: 600px;
+                left: 187px;
+            }
+            .namebox {
+                background-color: #2c2c34;
+                top: 75px;
+                left:187px;
+                position: absolute;
+                height: 250px;
+                width: 1330px;
+            }
+            .namebox p {
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+                padding-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class=midbox><div class=charts></div></div>
+        <div class="greenbox"><p style="color: white; padding-left: 20px; font-family:  'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">Science</p></div>
+        <div class="redbox"><p style="color: white; padding-left: 20px; font-family:  'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">Maths</p></div>
+        <div class="lightbluebox"><p style="color: white; padding-left: 20px; font-family:  'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">Social Studies</p></div>
+        <div class="bluebox"><p style="color: white; padding-left: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">English</p>
+            <p style="color: white; padding-left: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">{{ percentage_final }}</p></div>
+        <div class="redbox"><p style="color: white; padding-left: 20px; font-family:  'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">Maths</p></div>
+        <div class="dunebox"><p style="color: white; padding-left: 20px; font-family:  'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">Hindi</p></div>
+        <div class="lightbluebox"><p style="color: white; padding-left: 20px; font-family:  'Times New Roman', Times, serif; font-size: 30px; padding-top: 0%;">Social Science</p></div>
+        <div class="sidebar"></div>
+        <div class="head"></div>
+        <div class="name">
+         <p style="font-size: 17px; color: white;margin: 0px;padding-left: 0px;padding-top: 5px; font-family: 'Courier New', Courier, monospace; margin: 0px; position: absolute;left: 43px;;">School Management</p>
+         <img src="/static/logo.png" width="40px" height="32px" style="padding-top: 7px;">
+        </div>
+        <div class="namebox"><p> Welcome {{ full_name }}!!</p></div>
+        </body>
+        <table class="charts-css bar">
+
+        </table>
+</html>
